@@ -1,0 +1,104 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-image: url("https://images.unsplash.com/photo-1547534887-8d299f2c126b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  :root {
+    --main-color-1: #00a1a2;
+    --main-color-2: #00a1a3;
+    --main-color-3: #f433ad;
+  }
+  /* *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  } */
+  .inner-container {
+    width: 500px;
+    height: 380spx;
+    background-color: rgb(0, 0, 0, 0.6);
+    position: absolute;
+    top: calc(40% - 190px);
+    left: calc(50% - 200px);
+    /* calc ke andar - ke agal bagal ek ek space hai nhi to yah work nhi krta */
+    /*  and hamne center krne ke liye calc me 50% - inner-container ki height aur width ka half minus kiya hai */
+  }
+  .box {
+    /* background: red; */
+    width: calc(100% - 80px);
+    margin: auto;
+  }
+  .box input,
+  button {
+    box-sizing: border-box;
+    /* box-sizing border-box n lagata to input ki width 100% hone ke bavjud parent se overflow kr rhi thi
+    kyu usme padding ke karan extra with aa gyi thi  OR *se before after box-sizing: border-box; use
+    kr sakte hai */
+    display: block;
+    margin: 28px auto;
+    width: 100%;
+    height: 28px;
+    padding: 18px;
+  }
+  .box input {
+    background: #222;
+    border: none;
+    color: var(--main-color-1);
+  }
+  .box input:focus,
+  input:active {
+    /* outline-color: var(--main-color-1); */
+    outline: none;
+  }
+
+  .box input:hover {
+    background: #111;
+  }
+  .box button {
+    background: var(--main-color-1);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    padding: 0;
+    height: 40px;
+    /* line-height: 30px; */
+    font-size: 25px;
+  }
+  .box button:hover {
+    background-color: var(--main-color-3);
+    color: var(--main-color-1);
+  }
+  .box h1 {
+    text-align: center;
+    /* margin-top: 30px; */
+    padding: 10px;
+    /*yaha padding isliye use ki kyu ki h1 me margin-top apne parent box se n lekar pta nhi kyu inner-container
+    (parent ke parent) se le rhi thi; */
+    color: var(--main-color-1);
+  }
+  .box p {
+    text-align: center;
+  }
+  .box span {
+    color: var(--main-color-2);
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+com\BRDApp\dao\CustomerDao.class
+com\BRDApp\service\UserServiceImpl.class
+com\BRDApp\service\CustomerServiceImpl.class
+com\BRDApp\dao\UserDao.class
+com\BRDApp\entity\Customer.class
+com\BRDApp\config\AppContext.class
+com\BRDApp\dao\CustomerDaoImpl.class
+com\BRDApp\entity\User.class
+com\BRDApp\dao\UserDaoImpl.class
+com\BRDApp\service\CustomerService.class
+com\BRDApp\config\AppInitializer.class
+com\BRDApp\service\UserService.class
+com\BRDApp\config\WebMvcConfig.class
+com\BRDApp\controller\CustomerController.class
